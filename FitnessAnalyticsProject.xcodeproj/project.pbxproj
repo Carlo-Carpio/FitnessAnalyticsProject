@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		232F00872517BDCE0043EB4A /* ValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F00862517BDCE0043EB4A /* ValueFormatter.swift */; };
+		2336FE9C25160D5C0081380B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336FE9B25160D5C0081380B /* AppDelegate.swift */; };
+		2336FEA025160D5C0081380B /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336FE9F25160D5C0081380B /* DashboardTableViewController.swift */; };
+		2336FEA325160D5C0081380B /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336FEA125160D5C0081380B /* Dashboard.storyboard */; };
+		2336FEA625160D5C0081380B /* FitnessAnalyticsProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2336FEA425160D5C0081380B /* FitnessAnalyticsProject.xcdatamodeld */; };
+		2336FEA825160D610081380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2336FEA725160D610081380B /* Assets.xcassets */; };
+		2336FEAB25160D610081380B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336FEA925160D610081380B /* LaunchScreen.storyboard */; };
+		2336FEB625160D610081380B /* FitnessAnalyticsProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336FEB525160D610081380B /* FitnessAnalyticsProjectTests.swift */; };
+		2336FEC125160D610081380B /* FitnessAnalyticsProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336FEC025160D610081380B /* FitnessAnalyticsProjectUITests.swift */; };
+		2366FB022519268600EEA233 /* DetailedActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366FB012519268600EEA233 /* DetailedActivityCollectionViewCell.swift */; };
+		2366FB042519269500EEA233 /* DetailedActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2366FB032519269500EEA233 /* DetailedActivityCollectionViewCell.xib */; };
+		2366FB062519562100EEA233 /* DetailedActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366FB052519562100EEA233 /* DetailedActivitiesTableViewCell.swift */; };
+		238B387B25234A030097F8B1 /* TableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B387A25234A030097F8B1 /* TableView+.swift */; };
+		23B92F852516139700E8C4D5 /* PeriodSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B92F842516139700E8C4D5 /* PeriodSelectionTableViewCell.swift */; };
+		23B92F88251614F500E8C4D5 /* PeriodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B92F87251614F500E8C4D5 /* PeriodCollectionViewCell.swift */; };
+		23B92F8A2516150200E8C4D5 /* PeriodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B92F892516150200E8C4D5 /* PeriodCollectionViewCell.xib */; };
+		23B92F8D2516266300E8C4D5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B92F8C2516266300E8C4D5 /* UIView+.swift */; };
+		23C177242516608400998A7A /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C177232516608400998A7A /* ActivitiesTableViewCell.swift */; };
+		23C17727251660BE00998A7A /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C17726251660BE00998A7A /* ActivityCollectionViewCell.swift */; };
+		23C17729251660CC00998A7A /* ActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C17728251660CC00998A7A /* ActivityCollectionViewCell.xib */; };
+		23C1772C2516640800998A7A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1772B2516640800998A7A /* Models.swift */; };
+		23EB77F125190EB8005B8867 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB77F025190EB8005B8867 /* ColorManager.swift */; };
+		23EB77F325190EE7005B8867 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB77F225190EE7005B8867 /* UIColor+.swift */; };
+		23EB77F625191C16005B8867 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB77F525191C16005B8867 /* DetailsTableViewController.swift */; };
+		23EB77FD25191F52005B8867 /* StatisticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB77FC25191F52005B8867 /* StatisticCollectionViewCell.swift */; };
+		23EB77FF25191F89005B8867 /* StatisticCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EB77FE25191F89005B8867 /* StatisticCollectionViewCell.xib */; };
+		23EB780125192416005B8867 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB780025192416005B8867 /* StatisticsTableViewCell.swift */; };
+		4540FCBAF39D3903C90C7113 /* Pods_FitnessAnalyticsProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4C5551A2469C4C410653DF /* Pods_FitnessAnalyticsProjectTests.framework */; };
+		65EC90257F80B7CCA8EF4B24 /* Pods_FitnessAnalyticsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DAA65EED5C8B6A9E4D0056 /* Pods_FitnessAnalyticsProject.framework */; };
+		ADCED5F00844AAC7CB4C06B4 /* Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB319056AD00044AB830D7 /* Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2336FEB225160D610081380B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2336FE9025160D5C0081380B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2336FE9725160D5C0081380B;
+			remoteInfo = FitnessAnalyticsProject;
+		};
+		2336FEBD25160D610081380B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2336FE9025160D5C0081380B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2336FE9725160D5C0081380B;
+			remoteInfo = FitnessAnalyticsProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E6578AFB29CCCFE1353C2C9 /* Pods-FitnessAnalyticsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProject.release.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProject/Pods-FitnessAnalyticsProject.release.xcconfig"; sourceTree = "<group>"; };
+		232F00862517BDCE0043EB4A /* ValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueFormatter.swift; sourceTree = "<group>"; };
+		2336FE9825160D5C0081380B /* FitnessAnalyticsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessAnalyticsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2336FE9B25160D5C0081380B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2336FE9F25160D5C0081380B /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
+		2336FEA225160D5C0081380B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		2336FEA525160D5C0081380B /* FitnessAnalyticsProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessAnalyticsProject.xcdatamodel; sourceTree = "<group>"; };
+		2336FEA725160D610081380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2336FEAA25160D610081380B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2336FEAC25160D610081380B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2336FEB125160D610081380B /* FitnessAnalyticsProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAnalyticsProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2336FEB525160D610081380B /* FitnessAnalyticsProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAnalyticsProjectTests.swift; sourceTree = "<group>"; };
+		2336FEB725160D610081380B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2336FEBC25160D610081380B /* FitnessAnalyticsProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAnalyticsProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2336FEC025160D610081380B /* FitnessAnalyticsProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAnalyticsProjectUITests.swift; sourceTree = "<group>"; };
+		2336FEC225160D610081380B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2366FB012519268600EEA233 /* DetailedActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		2366FB032519269500EEA233 /* DetailedActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedActivityCollectionViewCell.xib; sourceTree = "<group>"; };
+		2366FB052519562100EEA233 /* DetailedActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		238B387A25234A030097F8B1 /* TableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
+		23B92F842516139700E8C4D5 /* PeriodSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		23B92F87251614F500E8C4D5 /* PeriodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCollectionViewCell.swift; sourceTree = "<group>"; };
+		23B92F892516150200E8C4D5 /* PeriodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodCollectionViewCell.xib; sourceTree = "<group>"; };
+		23B92F8C2516266300E8C4D5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		23C177232516608400998A7A /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		23C17726251660BE00998A7A /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		23C17728251660CC00998A7A /* ActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCollectionViewCell.xib; sourceTree = "<group>"; };
+		23C1772B2516640800998A7A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		23EB77F025190EB8005B8867 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		23EB77F225190EE7005B8867 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		23EB77F525191C16005B8867 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		23EB77FC25191F52005B8867 /* StatisticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCollectionViewCell.swift; sourceTree = "<group>"; };
+		23EB77FE25191F89005B8867 /* StatisticCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCollectionViewCell.xib; sourceTree = "<group>"; };
+		23EB780025192416005B8867 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
+		32DB319056AD00044AB830D7 /* Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617A472D225FAAF249A81C78 /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79CDDFFDF0305A1F5CC9D374 /* Pods-FitnessAnalyticsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProject.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProject/Pods-FitnessAnalyticsProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B6A6C66D43A8BC2EA8F9F2 /* Pods-FitnessAnalyticsProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProjectTests/Pods-FitnessAnalyticsProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFAAB66385F345DA581454E /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6564C05BD5B51ECC8DE2A3C /* Pods-FitnessAnalyticsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAnalyticsProjectTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAnalyticsProjectTests/Pods-FitnessAnalyticsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB4C5551A2469C4C410653DF /* Pods_FitnessAnalyticsProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAnalyticsProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DAA65EED5C8B6A9E4D0056 /* Pods_FitnessAnalyticsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAnalyticsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2336FE9525160D5C0081380B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EC90257F80B7CCA8EF4B24 /* Pods_FitnessAnalyticsProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEAE25160D610081380B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4540FCBAF39D3903C90C7113 /* Pods_FitnessAnalyticsProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEB925160D610081380B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCED5F00844AAC7CB4C06B4 /* Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232F00852517BD750043EB4A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				232F00862517BDCE0043EB4A /* ValueFormatter.swift */,
+				23EB77F025190EB8005B8867 /* ColorManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2336FE8F25160D5C0081380B = {
+			isa = PBXGroup;
+			children = (
+				2336FE9A25160D5C0081380B /* FitnessAnalyticsProject */,
+				2336FEB425160D610081380B /* FitnessAnalyticsProjectTests */,
+				2336FEBF25160D610081380B /* FitnessAnalyticsProjectUITests */,
+				2336FE9925160D5C0081380B /* Products */,
+				529ACC1370700298CDCCD0E9 /* Pods */,
+				F4D731E522A9A33442A09294 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2336FE9925160D5C0081380B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2336FE9825160D5C0081380B /* FitnessAnalyticsProject.app */,
+				2336FEB125160D610081380B /* FitnessAnalyticsProjectTests.xctest */,
+				2336FEBC25160D610081380B /* FitnessAnalyticsProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2336FE9A25160D5C0081380B /* FitnessAnalyticsProject */ = {
+			isa = PBXGroup;
+			children = (
+				232F00852517BD750043EB4A /* Managers */,
+				23C1772A251663FA00998A7A /* Models */,
+				23B92F8B2516265100E8C4D5 /* Extensions */,
+				23B92F7E251612FA00E8C4D5 /* UI */,
+				2336FE9B25160D5C0081380B /* AppDelegate.swift */,
+				2336FEA725160D610081380B /* Assets.xcassets */,
+				2336FEA925160D610081380B /* LaunchScreen.storyboard */,
+				2336FEAC25160D610081380B /* Info.plist */,
+				2336FEA425160D5C0081380B /* FitnessAnalyticsProject.xcdatamodeld */,
+			);
+			path = FitnessAnalyticsProject;
+			sourceTree = "<group>";
+		};
+		2336FEB425160D610081380B /* FitnessAnalyticsProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				2336FEB525160D610081380B /* FitnessAnalyticsProjectTests.swift */,
+				2336FEB725160D610081380B /* Info.plist */,
+			);
+			path = FitnessAnalyticsProjectTests;
+			sourceTree = "<group>";
+		};
+		2336FEBF25160D610081380B /* FitnessAnalyticsProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2336FEC025160D610081380B /* FitnessAnalyticsProjectUITests.swift */,
+				2336FEC225160D610081380B /* Info.plist */,
+			);
+			path = FitnessAnalyticsProjectUITests;
+			sourceTree = "<group>";
+		};
+		2366FB002519265300EEA233 /* Detailed Activity */ = {
+			isa = PBXGroup;
+			children = (
+				2366FB012519268600EEA233 /* DetailedActivityCollectionViewCell.swift */,
+				2366FB032519269500EEA233 /* DetailedActivityCollectionViewCell.xib */,
+			);
+			path = "Detailed Activity";
+			sourceTree = "<group>";
+		};
+		23B92F7E251612FA00E8C4D5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				23B92F7F2516130200E8C4D5 /* Dashboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		23B92F7F2516130200E8C4D5 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2336FEA125160D5C0081380B /* Dashboard.storyboard */,
+				2336FE9F25160D5C0081380B /* DashboardTableViewController.swift */,
+				23B92F802516134000E8C4D5 /* Sections */,
+				23EB77F425191BF9005B8867 /* Details */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		23B92F802516134000E8C4D5 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				23B92F812516134F00E8C4D5 /* Periods Cell */,
+				23B92F832516136500E8C4D5 /* Activities Cell */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		23B92F812516134F00E8C4D5 /* Periods Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23B92F86251614E500E8C4D5 /* Period */,
+				23B92F842516139700E8C4D5 /* PeriodSelectionTableViewCell.swift */,
+			);
+			path = "Periods Cell";
+			sourceTree = "<group>";
+		};
+		23B92F832516136500E8C4D5 /* Activities Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23C17725251660A200998A7A /* Activity */,
+				23C177232516608400998A7A /* ActivitiesTableViewCell.swift */,
+			);
+			path = "Activities Cell";
+			sourceTree = "<group>";
+		};
+		23B92F86251614E500E8C4D5 /* Period */ = {
+			isa = PBXGroup;
+			children = (
+				23B92F87251614F500E8C4D5 /* PeriodCollectionViewCell.swift */,
+				23B92F892516150200E8C4D5 /* PeriodCollectionViewCell.xib */,
+			);
+			path = Period;
+			sourceTree = "<group>";
+		};
+		23B92F8B2516265100E8C4D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23B92F8C2516266300E8C4D5 /* UIView+.swift */,
+				238B387A25234A030097F8B1 /* TableView+.swift */,
+				23EB77F225190EE7005B8867 /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23C17725251660A200998A7A /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				23C17726251660BE00998A7A /* ActivityCollectionViewCell.swift */,
+				23C17728251660CC00998A7A /* ActivityCollectionViewCell.xib */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		23C1772A251663FA00998A7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23C1772B2516640800998A7A /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23EB77F425191BF9005B8867 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				23EB77F525191C16005B8867 /* DetailsTableViewController.swift */,
+				23EB77F725191DB4005B8867 /* Sections */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		23EB77F725191DB4005B8867 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				23EB77FA25191F15005B8867 /* Statistics Section */,
+				23EB77F925191F08005B8867 /* Detailed Activities */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		23EB77F925191F08005B8867 /* Detailed Activities */ = {
+			isa = PBXGroup;
+			children = (
+				2366FB002519265300EEA233 /* Detailed Activity */,
+				2366FB052519562100EEA233 /* DetailedActivitiesTableViewCell.swift */,
+			);
+			path = "Detailed Activities";
+			sourceTree = "<group>";
+		};
+		23EB77FA25191F15005B8867 /* Statistics Section */ = {
+			isa = PBXGroup;
+			children = (
+				23EB77FB25191F3E005B8867 /* Statistic */,
+				23EB780025192416005B8867 /* StatisticsTableViewCell.swift */,
+			);
+			path = "Statistics Section";
+			sourceTree = "<group>";
+		};
+		23EB77FB25191F3E005B8867 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				23EB77FC25191F52005B8867 /* StatisticCollectionViewCell.swift */,
+				23EB77FE25191F89005B8867 /* StatisticCollectionViewCell.xib */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		529ACC1370700298CDCCD0E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79CDDFFDF0305A1F5CC9D374 /* Pods-FitnessAnalyticsProject.debug.xcconfig */,
+				0E6578AFB29CCCFE1353C2C9 /* Pods-FitnessAnalyticsProject.release.xcconfig */,
+				BCFAAB66385F345DA581454E /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.debug.xcconfig */,
+				617A472D225FAAF249A81C78 /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.release.xcconfig */,
+				B4B6A6C66D43A8BC2EA8F9F2 /* Pods-FitnessAnalyticsProjectTests.debug.xcconfig */,
+				D6564C05BD5B51ECC8DE2A3C /* Pods-FitnessAnalyticsProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4D731E522A9A33442A09294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6DAA65EED5C8B6A9E4D0056 /* Pods_FitnessAnalyticsProject.framework */,
+				32DB319056AD00044AB830D7 /* Pods_FitnessAnalyticsProject_FitnessAnalyticsProjectUITests.framework */,
+				DB4C5551A2469C4C410653DF /* Pods_FitnessAnalyticsProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2336FE9725160D5C0081380B /* FitnessAnalyticsProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2336FEC525160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProject" */;
+			buildPhases = (
+				3EEE9C19034E76AEC0166D21 /* [CP] Check Pods Manifest.lock */,
+				2336FE9425160D5C0081380B /* Sources */,
+				2336FE9525160D5C0081380B /* Frameworks */,
+				2336FE9625160D5C0081380B /* Resources */,
+				1EE0EC8A9F9E47FE1F565ECD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitnessAnalyticsProject;
+			productName = FitnessAnalyticsProject;
+			productReference = 2336FE9825160D5C0081380B /* FitnessAnalyticsProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2336FEB025160D610081380B /* FitnessAnalyticsProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2336FEC825160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProjectTests" */;
+			buildPhases = (
+				C6961133EE2608710FFB4210 /* [CP] Check Pods Manifest.lock */,
+				2336FEAD25160D610081380B /* Sources */,
+				2336FEAE25160D610081380B /* Frameworks */,
+				2336FEAF25160D610081380B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2336FEB325160D610081380B /* PBXTargetDependency */,
+			);
+			name = FitnessAnalyticsProjectTests;
+			productName = FitnessAnalyticsProjectTests;
+			productReference = 2336FEB125160D610081380B /* FitnessAnalyticsProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2336FEBB25160D610081380B /* FitnessAnalyticsProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2336FECB25160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProjectUITests" */;
+			buildPhases = (
+				89D3096AACB415D7E0B16A9A /* [CP] Check Pods Manifest.lock */,
+				2336FEB825160D610081380B /* Sources */,
+				2336FEB925160D610081380B /* Frameworks */,
+				2336FEBA25160D610081380B /* Resources */,
+				B2F0EAD358A0250374281A3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2336FEBE25160D610081380B /* PBXTargetDependency */,
+			);
+			name = FitnessAnalyticsProjectUITests;
+			productName = FitnessAnalyticsProjectUITests;
+			productReference = 2336FEBC25160D610081380B /* FitnessAnalyticsProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2336FE9025160D5C0081380B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Carlo Carpio";
+				TargetAttributes = {
+					2336FE9725160D5C0081380B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					2336FEB025160D610081380B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2336FE9725160D5C0081380B;
+					};
+					2336FEBB25160D610081380B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2336FE9725160D5C0081380B;
+					};
+				};
+			};
+			buildConfigurationList = 2336FE9325160D5C0081380B /* Build configuration list for PBXProject "FitnessAnalyticsProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2336FE8F25160D5C0081380B;
+			productRefGroup = 2336FE9925160D5C0081380B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2336FE9725160D5C0081380B /* FitnessAnalyticsProject */,
+				2336FEB025160D610081380B /* FitnessAnalyticsProjectTests */,
+				2336FEBB25160D610081380B /* FitnessAnalyticsProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2336FE9625160D5C0081380B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2336FEAB25160D610081380B /* LaunchScreen.storyboard in Resources */,
+				2336FEA825160D610081380B /* Assets.xcassets in Resources */,
+				2366FB042519269500EEA233 /* DetailedActivityCollectionViewCell.xib in Resources */,
+				2336FEA325160D5C0081380B /* Dashboard.storyboard in Resources */,
+				23EB77FF25191F89005B8867 /* StatisticCollectionViewCell.xib in Resources */,
+				23B92F8A2516150200E8C4D5 /* PeriodCollectionViewCell.xib in Resources */,
+				23C17729251660CC00998A7A /* ActivityCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEAF25160D610081380B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEBA25160D610081380B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE0EC8A9F9E47FE1F565ECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject/Pods-FitnessAnalyticsProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject/Pods-FitnessAnalyticsProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject/Pods-FitnessAnalyticsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EEE9C19034E76AEC0166D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessAnalyticsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89D3096AACB415D7E0B16A9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F0EAD358A0250374281A3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests/Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6961133EE2608710FFB4210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessAnalyticsProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2336FE9425160D5C0081380B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B92F8D2516266300E8C4D5 /* UIView+.swift in Sources */,
+				232F00872517BDCE0043EB4A /* ValueFormatter.swift in Sources */,
+				2336FEA025160D5C0081380B /* DashboardTableViewController.swift in Sources */,
+				23EB77F125190EB8005B8867 /* ColorManager.swift in Sources */,
+				2366FB022519268600EEA233 /* DetailedActivityCollectionViewCell.swift in Sources */,
+				238B387B25234A030097F8B1 /* TableView+.swift in Sources */,
+				23B92F852516139700E8C4D5 /* PeriodSelectionTableViewCell.swift in Sources */,
+				2336FE9C25160D5C0081380B /* AppDelegate.swift in Sources */,
+				23EB780125192416005B8867 /* StatisticsTableViewCell.swift in Sources */,
+				2336FEA625160D5C0081380B /* FitnessAnalyticsProject.xcdatamodeld in Sources */,
+				2366FB062519562100EEA233 /* DetailedActivitiesTableViewCell.swift in Sources */,
+				23C177242516608400998A7A /* ActivitiesTableViewCell.swift in Sources */,
+				23EB77FD25191F52005B8867 /* StatisticCollectionViewCell.swift in Sources */,
+				23C1772C2516640800998A7A /* Models.swift in Sources */,
+				23EB77F325190EE7005B8867 /* UIColor+.swift in Sources */,
+				23C17727251660BE00998A7A /* ActivityCollectionViewCell.swift in Sources */,
+				23EB77F625191C16005B8867 /* DetailsTableViewController.swift in Sources */,
+				23B92F88251614F500E8C4D5 /* PeriodCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEAD25160D610081380B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2336FEB625160D610081380B /* FitnessAnalyticsProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2336FEB825160D610081380B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2336FEC125160D610081380B /* FitnessAnalyticsProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2336FEB325160D610081380B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2336FE9725160D5C0081380B /* FitnessAnalyticsProject */;
+			targetProxy = 2336FEB225160D610081380B /* PBXContainerItemProxy */;
+		};
+		2336FEBE25160D610081380B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2336FE9725160D5C0081380B /* FitnessAnalyticsProject */;
+			targetProxy = 2336FEBD25160D610081380B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2336FEA125160D5C0081380B /* Dashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2336FEA225160D5C0081380B /* Base */,
+			);
+			name = Dashboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2336FEA925160D610081380B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2336FEAA25160D610081380B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2336FEC325160D610081380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2336FEC425160D610081380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2336FEC625160D610081380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CDDFFDF0305A1F5CC9D374 /* Pods-FitnessAnalyticsProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2336FEC725160D610081380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6578AFB29CCCFE1353C2C9 /* Pods-FitnessAnalyticsProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2336FEC925160D610081380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B6A6C66D43A8BC2EA8F9F2 /* Pods-FitnessAnalyticsProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAnalyticsProject.app/FitnessAnalyticsProject";
+			};
+			name = Debug;
+		};
+		2336FECA25160D610081380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6564C05BD5B51ECC8DE2A3C /* Pods-FitnessAnalyticsProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAnalyticsProject.app/FitnessAnalyticsProject";
+			};
+			name = Release;
+		};
+		2336FECC25160D610081380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFAAB66385F345DA581454E /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessAnalyticsProject;
+			};
+			name = Debug;
+		};
+		2336FECD25160D610081380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617A472D225FAAF249A81C78 /* Pods-FitnessAnalyticsProject-FitnessAnalyticsProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86VZ95K3S3;
+				INFOPLIST_FILE = FitnessAnalyticsProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarloCarpio.FitnessAnalyticsProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessAnalyticsProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2336FE9325160D5C0081380B /* Build configuration list for PBXProject "FitnessAnalyticsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2336FEC325160D610081380B /* Debug */,
+				2336FEC425160D610081380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2336FEC525160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2336FEC625160D610081380B /* Debug */,
+				2336FEC725160D610081380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2336FEC825160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2336FEC925160D610081380B /* Debug */,
+				2336FECA25160D610081380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2336FECB25160D610081380B /* Build configuration list for PBXNativeTarget "FitnessAnalyticsProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2336FECC25160D610081380B /* Debug */,
+				2336FECD25160D610081380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2336FEA425160D5C0081380B /* FitnessAnalyticsProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2336FEA525160D5C0081380B /* FitnessAnalyticsProject.xcdatamodel */,
+			);
+			currentVersion = 2336FEA525160D5C0081380B /* FitnessAnalyticsProject.xcdatamodel */;
+			path = FitnessAnalyticsProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2336FE9025160D5C0081380B /* Project object */;
+}

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OMF-Hx-se3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fe4-u5-5Lz">
+            <objects>
+                <navigationController id="OMF-Hx-se3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NgN-S8-SeY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="So2-Hs-0UP" kind="relationship" relationship="rootViewController" id="8g6-e3-onU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTK-lr-Lax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-376" y="238"/>
+        </scene>
+        <!--Summary Report-->
+        <scene sceneID="exk-cS-eRU">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="So2-Hs-0UP" customClass="DashboardTableViewController" customModule="FitnessAnalyticsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jNX-wj-Vtd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="pZi-gA-PRt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="RlL-ux-fVk" customClass="PeriodSelectionTableViewCell" customModule="FitnessAnalyticsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="18" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RlL-ux-fVk" id="5mA-0q-fKE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7gA-Ha-ke1">
+                                                    <rect key="frame" x="20" y="11" width="374" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="4jR-nC-a2G"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ld0-NO-CGL">
+                                                        <size key="itemSize" width="75" height="40"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="RlL-ux-fVk" id="BQa-9f-SDX"/>
+                                                        <outlet property="delegate" destination="RlL-ux-fVk" id="Gby-29-nUk"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7gA-Ha-ke1" firstAttribute="bottom" secondItem="5mA-0q-fKE" secondAttribute="bottomMargin" id="1HA-TS-kTU"/>
+                                                <constraint firstItem="7gA-Ha-ke1" firstAttribute="top" secondItem="5mA-0q-fKE" secondAttribute="topMargin" id="9Fg-az-1he"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7gA-Ha-ke1" secondAttribute="trailing" id="FS9-KI-Hfm"/>
+                                                <constraint firstItem="7gA-Ha-ke1" firstAttribute="leading" secondItem="5mA-0q-fKE" secondAttribute="leadingMargin" id="NS8-DE-kO9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="7gA-Ha-ke1" id="DxG-at-ncW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Yo5-nY-UUL">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="400" id="5xX-80-kqa">
+                                        <rect key="frame" x="0.0" y="114" width="414" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5xX-80-kqa" id="lu0-rI-NgQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-Uq-mXx" customClass="LineChartView" customModule="Charts">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0Sj-Uq-mXx" secondAttribute="trailing" id="7sk-fF-Qc4"/>
+                                                <constraint firstItem="0Sj-Uq-mXx" firstAttribute="leading" secondItem="lu0-rI-NgQ" secondAttribute="leading" id="CWI-Kb-heh"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Sj-Uq-mXx" secondAttribute="bottom" id="GuM-2e-vbr"/>
+                                                <constraint firstItem="0Sj-Uq-mXx" firstAttribute="top" secondItem="lu0-rI-NgQ" secondAttribute="top" id="hRZ-yq-MgL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Activities" id="EPD-kl-F61">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="kLb-4q-3dO" customClass="ActivitiesTableViewCell" customModule="FitnessAnalyticsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="570" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kLb-4q-3dO" id="qbU-fH-qqc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-7t-Wma">
+                                                    <rect key="frame" x="20" y="11" width="374" height="120"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="9kY-RU-Uxu"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g3I-VZ-zQu">
+                                                        <size key="itemSize" width="150" height="100"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="kLb-4q-3dO" id="cM8-Fe-39g"/>
+                                                        <outlet property="delegate" destination="kLb-4q-3dO" id="55M-ou-Xdr"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EZg-7t-Wma" firstAttribute="leading" secondItem="qbU-fH-qqc" secondAttribute="leadingMargin" id="Rft-Qu-aEd"/>
+                                                <constraint firstItem="EZg-7t-Wma" firstAttribute="top" secondItem="qbU-fH-qqc" secondAttribute="topMargin" id="fYV-Ah-PzD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="EZg-7t-Wma" secondAttribute="trailing" id="k9y-q5-Fhc"/>
+                                                <constraint firstItem="EZg-7t-Wma" firstAttribute="bottom" secondItem="qbU-fH-qqc" secondAttribute="bottomMargin" id="n0t-iv-zbs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="EZg-7t-Wma" id="Wl8-w6-Qcm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="So2-Hs-0UP" id="Ciw-ic-vRa"/>
+                            <outlet property="delegate" destination="So2-Hs-0UP" id="Xbt-wz-9EW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Summary Report" id="HRS-kd-Pp6"/>
+                    <connections>
+                        <outlet property="activitiesTableViewCell" destination="kLb-4q-3dO" id="Q3X-rg-AOd"/>
+                        <outlet property="lineChartView" destination="0Sj-Uq-mXx" id="nqX-4l-Jhj"/>
+                        <outlet property="selectionPeriodTableViewCell" destination="RlL-ux-fVk" id="AlZ-gN-3cr"/>
+                        <segue destination="LFA-oV-maA" kind="show" identifier="showDetailedActivitiesVC" id="I5b-IC-fMh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atg-ED-B9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="234"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="1PS-YW-rhj">
+            <objects>
+                <tableViewController id="LFA-oV-maA" customClass="DetailsTableViewController" customModule="FitnessAnalyticsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="eAG-Y9-iz2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="gZY-oQ-tqS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="230" id="aOv-zq-Yc5">
+                                        <rect key="frame" x="0.0" y="18" width="414" height="230"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aOv-zq-Yc5" id="TrG-bf-DvQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhA-ZR-5qS" customClass="BarChartView" customModule="Charts">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RhA-ZR-5qS" secondAttribute="bottom" id="Jd6-Wi-9kE"/>
+                                                <constraint firstItem="RhA-ZR-5qS" firstAttribute="top" secondItem="TrG-bf-DvQ" secondAttribute="top" id="PCv-bt-q6y"/>
+                                                <constraint firstItem="RhA-ZR-5qS" firstAttribute="leading" secondItem="TrG-bf-DvQ" secondAttribute="leading" id="RdU-Az-k46"/>
+                                                <constraint firstAttribute="trailing" secondItem="RhA-ZR-5qS" secondAttribute="trailing" id="Slf-ou-aZM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="maR-KQ-7X8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="FdV-Lx-EcZ" customClass="StatisticsTableViewCell" customModule="FitnessAnalyticsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="284" width="414" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FdV-Lx-EcZ" id="vz5-98-pzr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t8O-c0-Mui">
+                                                    <rect key="frame" x="20" y="11" width="374" height="228"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rtn-XV-XK5">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="FdV-Lx-EcZ" id="mup-qD-KHH"/>
+                                                        <outlet property="delegate" destination="FdV-Lx-EcZ" id="6km-2h-5Gr"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="t8O-c0-Mui" firstAttribute="leading" secondItem="vz5-98-pzr" secondAttribute="leadingMargin" id="9Tp-Xa-1eh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="t8O-c0-Mui" secondAttribute="bottom" id="QAm-k3-Grb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="t8O-c0-Mui" secondAttribute="trailing" id="cDq-os-F3t"/>
+                                                <constraint firstItem="t8O-c0-Mui" firstAttribute="top" secondItem="vz5-98-pzr" secondAttribute="topMargin" id="ym8-yL-gL3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="t8O-c0-Mui" id="K4E-5I-ULe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Today's Activities" id="ogF-1d-s5Z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="tlw-N0-h6e" customClass="DetailedActivitiesTableViewCell" customModule="FitnessAnalyticsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="590" width="414" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tlw-N0-h6e" id="vOo-N3-tep">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3He-cd-AB0">
+                                                    <rect key="frame" x="20" y="11" width="374" height="158"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dqr-uB-WJf">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="tlw-N0-h6e" id="Ij1-0o-55B"/>
+                                                        <outlet property="delegate" destination="tlw-N0-h6e" id="ZbH-Kb-AmR"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3He-cd-AB0" firstAttribute="top" secondItem="vOo-N3-tep" secondAttribute="topMargin" id="6F9-5r-owE"/>
+                                                <constraint firstItem="3He-cd-AB0" firstAttribute="bottom" secondItem="vOo-N3-tep" secondAttribute="bottomMargin" id="BzW-if-dij"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3He-cd-AB0" secondAttribute="trailing" id="QMz-5U-12p"/>
+                                                <constraint firstItem="3He-cd-AB0" firstAttribute="leading" secondItem="vOo-N3-tep" secondAttribute="leadingMargin" id="bf8-Zx-aAc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="3He-cd-AB0" id="dXg-rg-DXP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LFA-oV-maA" id="2GY-U5-8VH"/>
+                            <outlet property="delegate" destination="LFA-oV-maA" id="KaF-p4-FXa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Statistics" id="yWk-72-OI2"/>
+                    <connections>
+                        <outlet property="barChartView" destination="RhA-ZR-5qS" id="j3V-IS-Ah8"/>
+                        <outlet property="detailedActivitiesTableViewCell" destination="tlw-N0-h6e" id="2R3-22-Bgh"/>
+                        <outlet property="statisticsTableViewCell" destination="FdV-Lx-EcZ" id="4jX-0r-FtZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLD-po-qef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505.7971014492755" y="233.70535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

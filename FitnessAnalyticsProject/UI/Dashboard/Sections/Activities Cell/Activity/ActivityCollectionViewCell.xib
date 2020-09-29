@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LC8-NT-iuU" customClass="ActivityCollectionViewCell" customModule="FitnessAnalyticsProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AFG-7V-pVz">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-oh-EZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dOK-w2-Car">
+                                <rect key="frame" x="10" y="27.5" width="25" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="qeN-rG-Mas"/>
+                                    <constraint firstAttribute="width" constant="25" id="vsu-hk-Edi"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zr9-Rn-p1M">
+                                <rect key="frame" x="45" y="15" width="95" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36 235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="een-s3-4Y4">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlq-GI-CD1">
+                                        <rect key="frame" x="0.0" y="25" width="95" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ApE-N6-GNt"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dOK-w2-Car" firstAttribute="leading" secondItem="VuY-oh-EZ0" secondAttribute="leading" constant="10" id="A5k-6q-smT"/>
+                            <constraint firstAttribute="trailing" secondItem="zr9-Rn-p1M" secondAttribute="trailing" constant="10" id="BvS-3F-mwG"/>
+                            <constraint firstItem="zr9-Rn-p1M" firstAttribute="centerY" secondItem="VuY-oh-EZ0" secondAttribute="centerY" id="GZQ-JP-oXB"/>
+                            <constraint firstItem="dOK-w2-Car" firstAttribute="centerY" secondItem="VuY-oh-EZ0" secondAttribute="centerY" id="HMG-1y-fNO"/>
+                            <constraint firstItem="zr9-Rn-p1M" firstAttribute="leading" secondItem="dOK-w2-Car" secondAttribute="trailing" constant="10" id="rHF-Ff-Pud"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VuY-oh-EZ0" secondAttribute="trailing" id="J6D-kg-HO7"/>
+                    <constraint firstAttribute="bottom" secondItem="VuY-oh-EZ0" secondAttribute="bottom" id="UYd-W7-ffB"/>
+                    <constraint firstItem="VuY-oh-EZ0" firstAttribute="leading" secondItem="AFG-7V-pVz" secondAttribute="leading" id="XHz-Q2-iix"/>
+                    <constraint firstItem="VuY-oh-EZ0" firstAttribute="top" secondItem="AFG-7V-pVz" secondAttribute="top" id="grC-28-n9B"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="200" height="92"/>
+            <connections>
+                <outlet property="activityContentLabel" destination="een-s3-4Y4" id="sPl-Zo-bEO"/>
+                <outlet property="activityTrainingLabel" destination="Qlq-GI-CD1" id="QXz-lF-1XY"/>
+                <outlet property="containerView" destination="VuY-oh-EZ0" id="MgL-5T-2w9"/>
+                <outlet property="iconTrainingImageView" destination="dOK-w2-Car" id="Uld-8l-dTS"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>
